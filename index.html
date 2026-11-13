@@ -3,191 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>София Райчинова | Портфолио</title>
+    <title>София Райчинова // Software Engineering</title>
+    
+    <!-- Нестандартни Google Fonts с кирилица -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">София Райчинова</div>
-        <ul class="nav-links">
-            <li><a href="#about">За мен</a></li>
-            <li><a href="#skills">Умения</a></li>
-            <li><a href="#projects">Проекти</a></li>
-            <li><a href="#contact">Контакти</a></li>
-        </ul>
-    </nav>
+    <!-- Фонови светлинни акценти -->
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <!-- Плаваща центрирана навигация -->
+    <header class="nav-wrapper">
+        <nav class="navbar">
+            <a href="#" class="logo">SR<span class="dot">.</span>DEV</a>
+            <ul class="nav-links">
+                <li><a href="#about">За мен</a></li>
+                <li><a href="#skills">Стек</a></li>
+                <li><a href="#projects">Проекти</a></li>
+                <li><a href="#contact">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- За мен -->
     <section id="about" class="hero-section">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <h1>София Райчинова</h1>
-                <h2>Студент по софтуерно инженерство</h2>
-                <p class="bio">
-                    Уча програмиране на C++ и обектно-ориентиран дизайн. Най-много ми харесва да
-                    превръщам идея в работеща програма: от конзолни игри до система за проследяване
-                    на тренировки. В проектите си разделям кода на ясни модули и съм писала сама
-                    алгоритми като разбъркване на тесте и оптимизиране на тренировъчен план.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn">Виж проектите</a>
-                    <a href="https://github.com/твоят-username" target="_blank" class="btn btn-outline">GitHub</a>
-                </div>
+        <div class="container">
+            <div class="hero-badge">
+                <span class="pulse"></span> Отворена за стаж и реални проекти
             </div>
-
-            <div class="console" aria-hidden="true">
-                <div class="console-bar">
-                    <span></span><span></span><span></span>
-                    <em>sofia.exe</em>
+            
+            <div class="hero-split">
+                <div class="hero-text">
+                    <h1>София<br><span class="gradient-text">Райчинова</span></h1>
+                    <h2>// Студент по софтуерно инженерство</h2>
+                    <p class="bio">
+                        Уча програмиране на C++ и обектно-ориентиран дизайн. Най-много ми харесва да
+                        превръщам идея в работеща програма: от конзолни игри до система за проследяване
+                        на тренировки. В проектите си разделям кода на ясни модули и съм писала сама
+                        алгоритми като разбъркване на тесте и оптимизиране на тренировъчен план.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Разгледай проектите &darr;</a>
+                        <a href="https://github.com/SophiaRaytchinova" target="_blank" rel="noopener noreferrer" class="btn btn-glass">GitHub Профил &nearr;</a>
+                    </div>
                 </div>
-<pre class="console-body"><span class="prompt">&gt;</span> език
-C++
 
-<span class="prompt">&gt;</span> проекти
-Calorix Fitness System
-Pure Strategy
-Console Tower Defense
+                <div class="console-wrapper">
+                    <div class="console">
+                        <div class="console-bar">
+                            <div class="dots">
+                                <span class="r"></span><span class="y"></span><span class="g"></span>
+                            </div>
+                            <em>sofia@fmi:~/portfolio$ ./info.exe</em>
+                        </div>
+<pre class="console-body"><span class="prompt">$</span> stack --primary
+<span class="output">C++17, STL, OOP, Data Structures</span>
 
-<span class="prompt">&gt;</span> търся
-реални проекти и опитни колеги,
-от които да се уча<span class="cursor"></span></pre>
+<span class="prompt">$</span> ls ./projects
+<span class="output">├── Calorix_Fitness_System/
+├── Pure_Strategy_CardGame/
+└── Console_Tower_Defense/</span>
+
+<span class="prompt">$</span> status
+<span class="output">Търся реални предизвикателства и опитен екип,
+от който да черпя знания.</span><span class="cursor">█</span></pre>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Умения -->
+    <!-- Умения (Bento Grid) -->
     <section id="skills" class="section">
         <div class="container">
-            <h2>Технически умения</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Език</h3>
-                    <p>C++ (STL, работа с файлове, модулна структура с .h/.cpp)</p>
+            <div class="section-header">
+                <span class="section-tag">01 // ТЕХНОЛОГИИ</span>
+                <h2>Технически умения</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card bento-large">
+                    <div class="card-icon">{ }</div>
+                    <h3>Език и Стандартна библиотека</h3>
+                    <p>C++ (STL контейнери и алгоритми, работа с потоци и файлове, стриктна модулна структура с <code>.h</code> и <code>.cpp</code> файлове).</p>
                 </div>
-                <div class="skill-card">
-                    <h3>Концепции</h3>
-                    <p>ООП (наследяване, полиморфизъм, капсулация), Factory и Repository шаблони, динамично програмиране (knapsack)</p>
+                <div class="bento-card">
+                    <div class="card-icon">&#9881;</div>
+                    <h3>Архитектура и ООП</h3>
+                    <p>Наследяване, полиморфизъм, капсулация, Factory и Repository шаблони, динамично програмиране (0/1 Knapsack).</p>
                 </div>
-                <div class="skill-card">
+                <div class="bento-card">
+                    <div class="card-icon">&gt;_</div>
                     <h3>Инструменти</h3>
-                    <p>Git, GitHub, g++, Windows конзола</p>
+                    <p>Git, GitHub, g++ компилатор, Visual Studio, Windows Console API.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Проекти -->
-    <section id="projects" class="section bg-light">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Проекти</h2>
+            <div class="section-header right-aligned">
+                <span class="section-tag">02 // ИЗБРАНА РАБОТА</span>
+                <h2>Проекти</h2>
+            </div>
 
-            <article class="project-card">
-                <div class="project-side">
-                    <h3>Calorix Fitness System</h3>
+            <div class="projects-stack">
+                <!-- Проект 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <span class="project-num">01</span>
+                            <h3>Calorix Fitness System</h3>
+                        </div>
+                        <a href="https://github.com/SophiaRaytchinova/Calorix" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">Код в GitHub &nearr;</a>
+                    </div>
+                    
                     <ul class="tags">
                         <li>C++17</li>
                         <li>ООП</li>
-                        <li>Файлове</li>
+                        <li>Design Patterns</li>
+                        <li>0/1 Knapsack</li>
+                        <li>Файлови бази</li>
                     </ul>
-                    <a href="https://github.com/твоят-username/Calorix" target="_blank" class="btn">Код в GitHub</a>
-                </div>
-                <div class="project-main">
-                    <p>
-                        Конзолна система за проследяване на хранене и тренировки. Има потребители
-                        с различни роли: трениращите записват храна и упражнения, а администраторът
-                        поддържа базите с данни.
-                    </p>
-                    <p>
-                        Калкулира BMI и BMR (формулата на Mifflin-St Jeor), показва дневна сума на
-                        калории и макроси и следи напредъка към цел (отслабване, покачване или поддържане).
-                    </p>
-                    <p>
-                        Генерирането на тренировъчен план е решено като задача за раницата (0/1 knapsack):
-                        за зададено време се избират упражнения, които изгарят най-много калории.
-                    </p>
-                    <p>
-                        <strong>Какво показах в него:</strong> абстрактен клас User с наследници Admin и Trainee,
-                        UserFactory за създаване на потребители, хранилища (Repository) за потребители,
-                        храни и упражнения, и ясно разделение на кода в папки include/ и src/.
-                    </p>
-                </div>
-            </article>
 
-            <article class="project-card">
-                <div class="project-side">
-                    <h3>Pure Strategy</h3>
+                    <div class="project-body">
+                        <p>
+                            Конзолна система за проследяване на хранене и тренировки. Има потребители
+                            с различни роли: трениращите записват храна и упражнения, а администраторът
+                            поддържа базите с данни. Калкулира BMI и BMR (формулата на Mifflin-St Jeor), 
+                            показва дневна сума на калории и макроси и следи напредъка към цел.
+                        </p>
+                        <p>
+                            Генерирането на тренировъчен план е решено като задача за раницата (0/1 knapsack):
+                            за зададено време се избират упражнения, които изгарят най-много калории.
+                        </p>
+                        <div class="highlight-box">
+                            <strong>Архитектурни акценти:</strong> абстрактен клас <code>User</code> с наследници <code>Admin</code> и <code>Trainee</code>,
+                            <code>UserFactory</code> за създаване на потребители, <code>Repository</code> хранилища и ясно разделение в <code>include/</code> и <code>src/</code>.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Проект 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <span class="project-num">02</span>
+                            <h3>Pure Strategy</h3>
+                        </div>
+                        <a href="https://github.com/SophiaRaytchinova/Pure-Strategy" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">Код в GitHub &nearr;</a>
+                    </div>
+
                     <ul class="tags">
                         <li>C++</li>
                         <li>STL</li>
-                        <li>Файлове</li>
+                        <li>Fisher-Yates</li>
+                        <li>Валидация на вход</li>
                     </ul>
-                    <a href="https://github.com/твоят-username/Pure-Strategy" target="_blank" class="btn">Код в GitHub</a>
-                </div>
-                <div class="project-main">
-                    <p>
-                        Конзолна версия на картовата игра Pure Strategy за двама играчи, направена
-                        като финален проект. Всеки има по 13 карти и във всеки рунд залага карта,
-                        за да вземе наградата от общото тесте.
-                    </p>
-                    <p>
-                        Програмата има регистрация и вход, а статистиката на всеки играч (брой игри,
-                        процент победи и резултати срещу конкретни противници) се записва в негов
-                        .txt файл след края на играта.
-                    </p>
-                    <p>
-                        <strong>Какво показах в него:</strong> наградното тесте се разбърква с алгоритъма
-                        на Fisher-Yates, въведеното от играча се почиства и проверява (за да не гърми
-                        програмата при грешен вход), а равенствата се обработват чрез пренасяне на
-                        наградата в следващия рунд.
-                    </p>
-                </div>
-            </article>
 
-            <article class="project-card">
-                <div class="project-side">
-                    <h3>Console Tower Defense</h3>
+                    <div class="project-body">
+                        <p>
+                            Конзолна версия на картовата игра Pure Strategy за двама играчи, направена
+                            като финален проект. Всеки има по 13 карти и във всеки рунд залага карта,
+                            за да вземе наградата от общото тесте. Има регистрация, вход и запис на 
+                            статистиката в <code>.txt</code> файл след края на играта.
+                        </p>
+                        <div class="highlight-box">
+                            <strong>Архитектурни акценти:</strong> разбъркване на тестето с алгоритъма на Fisher-Yates, 
+                            защита срещу невалиден потребителски вход и логика за пренасяне на наградата при равенство.
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Проект 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <span class="project-num">03</span>
+                            <h3>Console Tower Defense</h3>
+                        </div>
+                        <a href="https://github.com/SophiaRaytchinova/Tower-Defense" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">Код в GitHub &nearr;</a>
+                    </div>
+
                     <ul class="tags">
                         <li>C++</li>
                         <li>std::vector</li>
-                        <li>ANSI цветове</li>
+                        <li>ANSI / WinAPI</li>
+                        <li>Game Loop</li>
                     </ul>
-                    <a href="https://github.com/твоят-username/Tower-Defense" target="_blank" class="btn">Код в GitHub</a>
-                </div>
-                <div class="project-main">
-                    <p>
-                        Игра тип „tower defense“ в конзолата. Играчът избира брой кули, те се
-                        разполагат случайно по картата и стрелят по врагове в обсега си.
-                        Целта е врагът да бъде унищожен, преди да стигне до базата.
-                    </p>
-                    <p>
-                        <strong>Какво показах в него:</strong> това е проектът, с който упражнявах основите:
-                        разделяне на .h и .cpp файлове, структури за обектите в играта, цикъл за
-                        обновяване на играта, случайни числа и проверка за обсег чрез разстояние
-                        между точки (std::sqrt). Картата се чертае с ASCII символи и цветове през Windows console API.
-                    </p>
-                </div>
-            </article>
 
+                    <div class="project-body">
+                        <p>
+                            Игра тип „tower defense“ в конзолата. Играчът избира брой кули, те се
+                            разполагат случайно по картата и стрелят по врагове в обсега си, преди 
+                            да достигнат базата.
+                        </p>
+                        <div class="highlight-box">
+                            <strong>Архитектурни акценти:</strong> разделяне на <code>.h</code> и <code>.cpp</code> файлове, структури за 
+                            обектите, основен game loop, изчисляване на обсег чрез Евклидово разстояние (<code>std::sqrt</code>) и цветно рендиране в конзолата.
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
     <!-- Контакти -->
     <section id="contact" class="section">
-        <div class="container text-center">
-            <h2>Контакти</h2>
-            <p>Търся възможности да работя по реални проекти и да се уча от по-опитни разработчици.</p>
-            <div class="contact-links">
-                <a href="https://github.com/твоят-username" target="_blank" class="contact-btn">GitHub</a>
-                <a href="https://linkedin.com/in/твоят-профил" target="_blank" class="contact-btn">LinkedIn</a>
-                <a href="mailto:your.email@example.com" class="contact-btn">Имейл</a>
+        <div class="container">
+            <div class="contact-box">
+                <span class="section-tag">03 // ВРЪЗКА С МЕН</span>
+                <h2>Да създадем нещо заедно</h2>
+                <p>Търся възможности да работя по реални софтуерни проекти и да се уча от по-опитни разработчици.</p>
+                
+                <div class="contact-links">
+                    <a href="https://github.com/SophiaRaytchinova" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn btn-glass">LinkedIn</a>
+                    <!-- Работещ бутон за копиране на имейл + mailto -->
+                    <button type="button" class="btn btn-glass" id="copyEmailBtn" data-email="sraychinova@gmail.com">
+                        Копирай имейл
+                    </button>
+                </div>
+                <span id="copyFeedback" class="copy-feedback" aria-live="polite"></span>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 София Райчинова</p>
+        <div class="container footer-flex">
+            <p>&copy; 2026 София Райчинова</p>
+            <p class="footer-code">Built with clean HTML &amp; CSS</p>
+        </div>
     </footer>
 
+    <!-- Малък скрипт за работещо копиране на имейла -->
+    <script>
+        const copyBtn = document.getElementById('copyEmailBtn');
+        const feedback = document.getElementById('copyFeedback');
+
+        copyBtn.addEventListener('click', () => {
+            const email = copyBtn.getAttribute('data-email');
+            navigator.clipboard.writeText(email).then(() => {
+                feedback.textContent = `✓ Имейлът (${email}) е копиран в клипборда!`;
+                setTimeout(() => { feedback.textContent = ''; }, 3500);
+            }).catch(() => {
+                window.location.href = `mailto:${email}`;
+            });
+        });
+    </script>
 </body>
 </html>
