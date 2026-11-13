@@ -1,0 +1,126 @@
+<!-- Заглавна секция / За мен -->
+<section id="about" class="hero-section">
+    <div class="container">
+        <h1>Здравейте, аз съм <span class="highlight">София Райчинова</span></h1>
+        <h2>Студент по софтуерно инженерство</h2>
+        <p class="bio">
+            Уча програмиране на C++ и обектно-ориентиран дизайн. Най-много ми харесва да 
+            превръщам идея в работеща програма: от конзолни игри до система за проследяване 
+            на тренировки. В проектите си разделям кода на ясни модули и съм писала сама 
+            алгоритми като разбъркване на тесте и оптимизиране на тренировъчен план.
+        </p>
+    </div>
+</section>
+
+<!-- Технически умения -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Технически умения</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Език</h3>
+                <p>C++ (STL, работа с файлове, модулна структура с .h/.cpp)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Концепции</h3>
+                <p>ООП (наследяване, полиморфизъм, капсулация), Factory и Repository шаблони, динамично програмиране (knapsack)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Инструменти</h3>
+                <p>Git, GitHub, g++, Windows конзола</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Проекти -->
+<section id="projects" class="section bg-light">
+    <div class="container">
+        <h2>Проекти</h2>
+        <div class="projects-grid">
+
+            <!-- Проект 1 -->
+            <div class="project-card">
+                <h3>Calorix Fitness System</h3>
+                <p>
+                    Конзолна система за проследяване на хранене и тренировки. Има потребители 
+                    с различни роли: трениращите записват храна и упражнения, а администраторът 
+                    поддържа базите с данни.
+                </p>
+                <p>
+                    Калкулира BMI и BMR (формулата на Mifflin-St Jeor), показва дневна сума на 
+                    калории и макроси и следи напредъка към цел (отслабване, покачване или поддържане).
+                </p>
+                <p>
+                    Генерирането на тренировъчен план е решено като задача за раницата (0/1 knapsack): 
+                    за зададено време се избират упражнения, които изгарят най-много калории.
+                </p>
+                <p><strong>Технологии:</strong> C++17, ООП, файлово съхранение на данните</p>
+                <p><strong>Какво показах в него:</strong> абстрактен клас User с наследници Admin и Trainee, 
+                   UserFactory за създаване на потребители, хранилища (Repository) за потребители, 
+                   храни и упражнения, и ясно разделение на кода в папки include/ и src/.</p>
+                <div class="project-links">
+                    <a href="https://github.com/SophiaRaytchinova/Calorix" target="_blank" class="btn">Код в GitHub</a>
+                </div>
+            </div>
+
+            <!-- Проект 2 -->
+            <div class="project-card">
+                <h3>Pure Strategy</h3>
+                <p>
+                    Конзолна версия на картовата игра Pure Strategy за двама играчи, направена 
+                    като финален проект. Всеки има по 13 карти и във всеки рунд залага карта, 
+                    за да вземе наградата от общото тесте.
+                </p>
+                <p>
+                    Програмата има регистрация и вход, а статистиката на всеки играч (брой игри, 
+                    процент победи и резултати срещу конкретни противници) се записва в негов 
+                    .txt файл след края на играта.
+                </p>
+                <p><strong>Технологии:</strong> C++, стандартна библиотека, работа с файлове</p>
+                <p><strong>Какво показах в него:</strong> наградното тесте се разбърква с алгоритъма 
+                   на Fisher-Yates, въведеното от играча се почиства и проверява (за да не гърми 
+                   програмата при грешен вход), а равенствата се обработват чрез пренасяне на 
+                   наградата в следващия рунд.</p>
+                <div class="project-links">
+                    <a href="https://github.com/SophiaRaytchinova/Pure-Strategy" target="_blank" class="btn">Код в GitHub</a>
+                </div>
+            </div>
+
+            <!-- Проект 3 -->
+            <div class="project-card">
+                <h3>Console Tower Defense</h3>
+                <p>
+                    Игра тип „tower defense“ в конзолата. Играчът избира брой кули, те се 
+                    разполагат случайно по картата и стрелят по врагове в обсега си. 
+                    Целта е врагът да бъде унищожен, преди да стигне до базата.
+                </p>
+                <p><strong>Технологии:</strong> C++, std::vector, ASCII графика с ANSI цветове, Windows console API</p>
+                <p><strong>Какво показах в него:</strong> това е проектът, с който упражнявах основите: 
+                   разделяне на .h и .cpp файлове, структури за обектите в играта, цикъл за 
+                   обновяване на играта, случайни числа и проверка за обсег чрез разстояние между точки (std::sqrt).</p>
+                <div class="project-links">
+                    <a href="https://github.com/SophiaRaytchinova/Tower-Defense" target="_blank" class="btn">Код в GitHub</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Контакти -->
+<section id="contact" class="section">
+    <div class="container text-center">
+        <h2>Контакти</h2>
+        <p>Търся възможности да работя по реални проекти и да се уча от по-опитни разработчици.</p>
+        <div class="contact-links">
+            <a href="https://github.com/SophiaRaytchinova" target="_blank" class="contact-btn">GitHub</a>
+            <a href="https://linkedin.com/in/sophia-raytchinova" target="_blank" class="contact-btn">LinkedIn</a>
+            <a href="mailto: sraychinova@gmail.com" class="contact-btn">Имейл</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 София Райчинова</p>
+</footer>
